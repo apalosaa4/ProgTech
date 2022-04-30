@@ -38,12 +38,15 @@ Projektmunka és a felelősök:
 
 ## Fizikai környezet
 
-## Absztrakt domain modell
-
 ## Architektruális terv
 
 ## Adatbázis terv
 
 ## Implementációs terv
 
+## Telepítési terv
+
 ## Tesztterv
+
+## Karbantartási terv
+
