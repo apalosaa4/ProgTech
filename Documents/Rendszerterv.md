@@ -34,6 +34,14 @@ Projektmunka és a felelősök:
 
 ## Követelmények
 
+ - Ablakos alkalmazás megvalósítása, ami user friendly legyen, azaz a felhasználónak könnyű és egyértelmű legyen a használata.
+ - Az adott recepteket, hozzávalókat, alapanyagokat és esetleges allergiákat egy adatbazis rendszerben tárolni tudjuk.
+ - Az adott adatbázisunkkal való kommunikácó és változtatások logolása.
+
+ - Esetleges szabályok vagy törvényi előírások:
+	-   JAVA alapú alkalmazás
+	-   Intuitív, átlátható rendszer 
+
 ## Funkcionális terv
 
 ## Fizikai környezet
