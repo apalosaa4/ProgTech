@@ -43,6 +43,16 @@ Projektmunka és a felelősök:
 	-   Intuitív, átlátható rendszer 
 
 ## Funkcionális terv
+ -   Alkalmazást használók
+	 - Nem szükséges a bejelentkezés
+	 - Nem szükséges egy admin felhasználó jelenléte
+
+ -   Alkalmazás használati esetei és lefutásai:
+	 - Az adott felhasználó ki tudja választani az alapanyagokat
+	 - Az adott felhasználó az alapanyagok alapján tud böngészni a lehetséges receptek között
+	 - Az adott felhasználó a receptek közül ki tudja választani a neki legmegfelelőbbet
+	 - Az adott felhasználó meg tudja nézni a recept részletes leírását
+
 
 ## Fizikai környezet
 
