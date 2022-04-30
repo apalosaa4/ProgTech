@@ -56,6 +56,19 @@ Projektmunka és a felelősök:
 
 ## Fizikai környezet
 
+Ezt az alkalmazást asztali platformra tervezzük, melyet Java nyelv használatával tudunk megvalósítani.
+Ezt a későbbiekben akár telefonon androidos applikációra is át lehet formálni.
+
+Fejlesztői eszközök:
+
+-   Diagrams.Net
+-   IntelliJ IDEA
+-   Visual Studio Code
+-   XAMPP
+-   MySQL Workbench
+-   DataGrip
+
+
 ## Architektruális terv
 
 ## Adatbázis terv
