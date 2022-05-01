@@ -79,6 +79,11 @@ Az alkalmazáshoz szükség van egy adatbázis szerverre. A kliens oldali alkalm
 ## Adatbázis terv
 
 ## Implementációs terv
+Egy ablakos asztali alkalmazást készítünk Java-ban, a GUI elkészítéséhez Java Swinget is használunk. Két tervezési mintát alkalmazunk, melyek a következők:
+
+-
+-
+
 
 ## Telepítési terv
 
