@@ -89,6 +89,19 @@ Egy ablakos asztali alkalmazást készítünk Java-ban, a GUI elkészítéséhez
 Az alkalmazás használatához egy számítógépre van szügségünk, melyen futtatni tudjuk.
 
 ## Tesztterv
+A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása.
+
+###Tesztelési eljárások
+
+Unit teszt:
+Ahol csak lehetséges, szükséges már a fejlesztési idő alatt is tesztelni, hogy a metódusok megfelelően működnek-e. Ezért a metódusok megfelelő működésének biztosítására írni kell Unit teszteket. A metódusok akkor vannak kész, ha a tesztesetek hiba nélkül lefutnak az egyes metódusokon.
+
+| Tesztelő:                | Időpont:     Év/Hónap/Nap |
+|--------------------------|---------------------------|
+
+| Időpont | Teszt              | Eredmény | Megjegyzés                                                                      |
+|:-------:|--------------------|----------|---------------------------------------------------------------------------------|
+|  18:34  |     Példa          | Sikeres  | A példa gomb megnyomására a példa adatok megjelentek.                           | 
 
 ## Karbantartási terv
 
