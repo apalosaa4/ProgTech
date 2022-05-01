@@ -78,6 +78,7 @@ Fejlesztői eszközök:
 Az alkalmazáshoz szükség van egy adatbázis szerverre. A kliens oldali alkalmazást Java segítségével implementáljuk, emellett a Swinget is használjuk a GUI elkészítéséhez.
 
 ## Adatbázis terv
+![Adatbázis terv](https://github.com/apalosaa4/ProgTech/blob/main/Documents/Images/Recipes.png)
 
 ## Implementációs terv
 
