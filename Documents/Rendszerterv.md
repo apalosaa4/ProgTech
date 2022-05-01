@@ -70,6 +70,11 @@ Fejlesztői eszközök:
 
 
 ## Architektruális terv
+- Adatbázis szerver: MySQL
+- Java
+- Java Swing
+
+Az alkalmazáshoz szükség van egy adatbázis szerverre. A kliens oldali alkalmazást Java segítségével implementáljuk, emellett a Swinget is használjuk a GUI elkészítéséhez.
 
 ## Adatbázis terv
 
