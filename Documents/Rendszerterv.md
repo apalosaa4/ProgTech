@@ -86,6 +86,7 @@ Egy ablakos asztali alkalmazást készítünk Java-ban, a GUI elkészítéséhez
 
 
 ## Telepítési terv
+Az alkalmazás használatához egy számítógépre van szügségünk, melyen futtatni tudjuk.
 
 ## Tesztterv
 
