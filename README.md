@@ -5,7 +5,7 @@
 *	Time: Hétfő 10:00-11:40
 *	Project description: JAVA nyelven írt ablakos alkalmazás
 *	Members:
-	* <a href="https://github.com/apalosaa4">Bognár Vikória</a>
+	* <a href="https://github.com/apalosaa4">Bognár Viktória</a>
 	* <a href="https://github.com/KulcsarVivi">Kulcsár Vivien</a>
 
 
