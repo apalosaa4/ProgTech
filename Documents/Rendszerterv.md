@@ -70,6 +70,7 @@ Fejlesztői eszközök:
 
 
 ## Architektruális terv
+
 - Adatbázis szerver: MySQL
 - Java
 - Java Swing
@@ -79,6 +80,7 @@ Az alkalmazáshoz szükség van egy adatbázis szerverre. A kliens oldali alkalm
 ## Adatbázis terv
 
 ## Implementációs terv
+
 Egy ablakos asztali alkalmazást készítünk Java-ban, a GUI elkészítéséhez Java Swinget is használunk. Két tervezési mintát alkalmazunk, melyek a következők:
 
 -
@@ -86,12 +88,14 @@ Egy ablakos asztali alkalmazást készítünk Java-ban, a GUI elkészítéséhez
 
 
 ## Telepítési terv
+
 Az alkalmazás használatához egy számítógépre van szügségünk, melyen futtatni tudjuk.
 
 ## Tesztterv
+
 A tesztelések célja a rendszer és komponensei funkcionalitásának teljes vizsgálata, ellenőrzése, a rendszer által megvalósított üzleti szolgáltatások verifikálása.
 
-###Tesztelési eljárások
+### Tesztelési eljárások
 
 Unit teszt:
 Ahol csak lehetséges, szükséges már a fejlesztési idő alatt is tesztelni, hogy a metódusok megfelelően működnek-e. Ezért a metódusok megfelelő működésének biztosítására írni kell Unit teszteket. A metódusok akkor vannak kész, ha a tesztesetek hiba nélkül lefutnak az egyes metódusokon.
@@ -105,3 +109,15 @@ Ahol csak lehetséges, szükséges már a fejlesztési idő alatt is tesztelni, 
 
 ## Karbantartási terv
 
+Az alkalmazás folyamatos üzemeltetése és karbantartása, mely magában foglalja a programhibák elhárítását, a belső igények változása miatti módosításokat, valamint a környezeti feltételek változása miatt
+megfogalmazott program-, illetve állomány módosítási igényeket.
+
+### Karbantartás
+- Corrective Maintenance: A felhasználók által felfedezett és "user reportban"
+  elküldött hibák kijavítása.
+- Adaptive Maintenance: A program naprakészen tartása és finomhangolása.
+- Perfective Maintenance: A szoftver hosszútávú használata érdekében végzett
+  módosítások, új funkciók, a szoftver teljesítményének és működési
+  megbízhatóságának javítása.
+- Preventive Maintenance: Olyan problémák elhárítása, amelyek még nem
+  tűnnek fontosnak, de később komoly problémákaat okozhatnak.
