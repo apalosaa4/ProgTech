@@ -11,5 +11,5 @@
 
 
 <a href="https://github.com/apalosaa4/ProgTech/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=apalosaa4/ProgTech" />
+  <img src="https://contrib.rocks/image?repo=apalosaa4/ProgTech"/>
 </a>
