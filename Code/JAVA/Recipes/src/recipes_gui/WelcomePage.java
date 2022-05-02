@@ -12,13 +12,6 @@ public class WelcomePage {
     private JLabel WelcomeLabel;
 
     public WelcomePage() {
-        NewRecipe.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"Valami");
-            }
-        });
-
         JFrame frame = new JFrame("Recipe Searcher");
         frame.add(WelcomePage, BorderLayout.CENTER);
         frame.setContentPane(WelcomePage);
@@ -26,5 +19,18 @@ public class WelcomePage {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
+        NewRecipe.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new NewRecipe();
+            }
+        });
+        SearchRecipe.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
     }
 }
