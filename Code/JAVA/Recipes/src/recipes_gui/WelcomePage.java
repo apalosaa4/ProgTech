@@ -23,7 +23,7 @@ public class WelcomePage {
         NewRecipe.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new NewRecipe();
+                new SearchByIngredients();
             }
         });
         SearchRecipe.addActionListener(new ActionListener() {
