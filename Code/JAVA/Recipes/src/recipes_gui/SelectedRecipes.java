@@ -7,6 +7,10 @@ import java.awt.event.ActionListener;
 public class SelectedRecipes {
     private JButton button1;
     private JPanel mainPanel;
+    private JLabel RecipesLbl;
+    private JList recipesList;
+    private JButton homePage;
+    private JButton goRecipeBtn;
 
     public SelectedRecipes() {
         button1.addActionListener(new ActionListener() {
