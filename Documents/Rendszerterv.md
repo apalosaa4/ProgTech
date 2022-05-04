@@ -29,7 +29,7 @@ Projektmunka és a felelősök:
 
 ## Üzleti folymatok modellje
 
-![Üzleti folymatok modellje](https://raw.githubusercontent.com/apalosaa4/ProgTech/main/Documents/Images/%C3%9Czleti_folymatok_modellje.jpg)
+![Üzleti folymatok modellje](https://raw.githubusercontent.com/apalosaa4/ProgTech/main/Documents/Images/%C3%9Czleti%20folyamatok%20modellje.png)
 
 
 ## Követelmények
