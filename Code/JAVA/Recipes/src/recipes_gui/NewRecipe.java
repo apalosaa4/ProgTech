@@ -17,4 +17,5 @@ public class NewRecipe {
     private JList ingredientsList;
     private JLabel directionsLbl;
     private JTextArea directionsTa;
+    private JButton uploadB;
 }
