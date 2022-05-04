@@ -17,6 +17,7 @@ public class SearchByIngredients extends JPanel{
     private JCheckBox MilkFreeCheck;
     private JCheckBox GlutenFreeCheck;
     private JCheckBox VeganCheck;
+    private JButton Home_page;
 
     public SearchByIngredients(){
         JFrame NewRecipe = new JFrame("New Recipe");
