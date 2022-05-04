@@ -3,14 +3,18 @@ package recipes_gui;
 import javax.swing.*;
 
 public class NewRecipe {
-    private JLabel AddNewRecipeLbl;
-    private JLabel RecipeNameLbl;
-    private JTextField RecipeNameTf;
-    private JLabel FreeLbl;
-    private JCheckBox GlutenFreeCb;
-    private JCheckBox MilkFreeCb;
-    private JCheckBox VeganCb;
-    private JLabel GlutenFreeLbl;
-    private JLabel VeganLbl;
-    private JLabel MilfFreeLbl;
+    private JLabel addNewRecipeLbl;
+    private JLabel recipeNameLbl;
+    private JTextField recipeNameTf;
+    private JLabel freeLbl;
+    private JCheckBox glutenFreeCb;
+    private JCheckBox milkFreeCb;
+    private JCheckBox veganCb;
+    private JLabel glutenFreeLbl;
+    private JLabel veganLbl;
+    private JLabel milfFreeLbl;
+    private JLabel ingredientsLbl;
+    private JList ingredientsList;
+    private JLabel directionsLbl;
+    private JTextArea directionsTa;
 }
