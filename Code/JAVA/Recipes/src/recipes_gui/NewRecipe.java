@@ -1,6 +1,8 @@
 package recipes_gui;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class NewRecipe extends JFrame{
     private JLabel addNewRecipeLbl;
@@ -21,13 +23,20 @@ public class NewRecipe extends JFrame{
     private JButton homepage_btn;
     private JPanel newRecipe_panel;
 
-
     public NewRecipe(){
         setContentPane(newRecipe_panel);
-        setTitle("Recipe Searcher");
+        setTitle("New Recipe");
         setVisible(true);
         setSize(550,400);
         setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
+
+        homepage_btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                WelcomePage welcomePage = new WelcomePage();
+                dispose();
+            }
+        });
     }
 }

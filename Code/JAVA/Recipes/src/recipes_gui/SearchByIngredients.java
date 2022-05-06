@@ -1,11 +1,12 @@
 package recipes_gui;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class SearchByIngredients extends JPanel{
+public class SearchByIngredients extends JFrame{
 
-    private JPanel NewRecipe;
+    private JPanel searchByIngredients_panel;
     private JTextField ingredient_1;
     private JTextField ingredient_2;
     private JTextField ingredient_3;
@@ -13,19 +14,34 @@ public class SearchByIngredients extends JPanel{
     private JTextField ingredient_5;
     private JTextField ingredient_6;
     private JTextField ingredient_7;
-    private JButton SearchButton;
+    private JButton search_btn;
     private JCheckBox MilkFreeCheck;
     private JCheckBox GlutenFreeCheck;
     private JCheckBox VeganCheck;
-    private JButton Home_page;
+    private JButton homePage_btn;
 
     public SearchByIngredients(){
-        JFrame NewRecipe = new JFrame("New Recipe");
-        NewRecipe.add(NewRecipe, BorderLayout.CENTER);
-        NewRecipe.setContentPane(NewRecipe);
-        NewRecipe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        NewRecipe.pack();
-        NewRecipe.setLocationRelativeTo(null);
-        NewRecipe.setVisible(true);
+        setContentPane(searchByIngredients_panel);
+        setTitle("Search By Ingredients");
+        setVisible(true);
+        setSize(550,400);
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
+
+        search_btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SelectedRecipes selectedRecipes = new SelectedRecipes();
+                dispose();
+            }
+        });
+
+        homePage_btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                WelcomePage welcomePage = new WelcomePage();
+                dispose();
+            }
+        });
     }
 }

@@ -197,7 +197,7 @@
         <properties>
           <font name="Bookman Old Style" size="14" style="0"/>
           <foreground color="-16169912"/>
-          <text value="Go back"/>
+          <text value="Home page"/>
         </properties>
       </component>
     </children>
