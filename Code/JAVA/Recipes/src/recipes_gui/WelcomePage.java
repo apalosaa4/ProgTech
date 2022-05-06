@@ -24,15 +24,14 @@ public class WelcomePage extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 NewRecipe newRecipe = new NewRecipe();
-
             }
         });
+
         searchrecipe_btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                SelectedRecipes selectedRecipes = new SelectedRecipes();
             }
-
         });
     }
 }
