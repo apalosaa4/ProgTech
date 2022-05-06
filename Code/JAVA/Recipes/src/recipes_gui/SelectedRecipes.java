@@ -13,18 +13,6 @@ public class SelectedRecipes extends JFrame{
     private JButton goRecipeBtn;
 
     public SelectedRecipes() {
-        /*button1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null,"Valami");
-            }
-        });*/
-        /*JFrame frame = new JFrame("Recipes");
-        frame.setContentPane(new SelectedRecipes().selectedRecipes_panel);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLocationRelativeTo(null);
-        frame.pack();
-        frame.setVisible(true);*/
         setContentPane(selectedRecipes_panel);
         setTitle("Selected Recipes");
         setVisible(true);
