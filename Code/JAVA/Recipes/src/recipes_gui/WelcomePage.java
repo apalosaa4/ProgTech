@@ -5,10 +5,10 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class WelcomePage {
-    private JButton NewRecipe;
+public class WelcomePage extends JFrame {
+    private JButton newrecipe_btn;
     private JPanel WelcomePage;
-    private JButton SearchRecipe;
+    private JButton searchrecipe_btn;
     private JLabel WelcomeLabel;
 
     public WelcomePage() {
@@ -20,17 +20,19 @@ public class WelcomePage {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
 
-        NewRecipe.addActionListener(new ActionListener() {
+        newrecipe_btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new SearchByIngredients();
+                NewRecipe newRecipe = new NewRecipe();
+
             }
         });
-        SearchRecipe.addActionListener(new ActionListener() {
+        searchrecipe_btn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
+
         });
     }
 }

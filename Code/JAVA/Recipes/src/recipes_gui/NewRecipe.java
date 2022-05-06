@@ -2,7 +2,7 @@ package recipes_gui;
 
 import javax.swing.*;
 
-public class NewRecipe {
+public class NewRecipe extends JFrame{
     private JLabel addNewRecipeLbl;
     private JLabel recipeNameLbl;
     private JTextField recipeNameTf;
@@ -17,6 +17,17 @@ public class NewRecipe {
     private JList ingredientsList;
     private JLabel directionsLbl;
     private JTextArea directionsTa;
-    private JButton uploadB;
-    private JButton HomePage;
+    private JButton upload_btn;
+    private JButton homepage_btn;
+    private JPanel newRecipe_panel;
+
+
+    public NewRecipe(){
+        setContentPane(newRecipe_panel);
+        setTitle("Recipe Searcher");
+        setVisible(true);
+        setSize(550,400);
+        setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        setLocationRelativeTo(null);
+    }
 }
