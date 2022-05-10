@@ -9,19 +9,18 @@ import java.sql.*;
 public class DatabaseConnection {
     private static Logger logger = Logger.getLogger(DatabaseConnection.class);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException, SQLException{
 
         logger.info("Proba");
         System.out.println("Proba done");
 
-       /*String host = System.getenv("DB_HOST");
-        String port = System.getenv("DB_PORT");
-        String dbname = System.getenv("DB_NAME");
-        String url = String.format("jdbc:mysql://localhost:3306/recipes",host,port,dbname);
-        String username = System.getenv("DB_USER");
-        String password = System.getenv("DB_PASSWORD");
+        String jdbcUrl = "jdbc:mysql://localhost:3306/recipes";
+        String username = "root";
+        String password = "";
 
-        JDBCUtil jdbcUtil = new JDBCUtil("com.mysql.cj.jdbc.Driver",url,username,password);
-        jdbcUtil.getConnection();*/
+        Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
+
+        String sql = "INSERT INTO freefrom(freefrom_id, freefrom_name) values (1, Vegan)";
+        
     }
 }
