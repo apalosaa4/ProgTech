@@ -11,8 +11,8 @@ public class DatabaseConnection {
 
     public static void main(String[] args) throws IOException, SQLException{
 
-        logger.info("Proba");
-        System.out.println("Proba done");
+        logger.info("InsertVeganToFreeFrom");
+        System.out.println("Done");
 
         String jdbcUrl = "jdbc:mysql://localhost:3306/recipes";
         String username = "root";
@@ -21,6 +21,5 @@ public class DatabaseConnection {
         Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
 
         String sql = "INSERT INTO freefrom(freefrom_id, freefrom_name) values (1, Vegan)";
-        
     }
 }

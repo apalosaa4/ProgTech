@@ -43,7 +43,7 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="47675bae-8ec6-42dc-8d86-db1430607228" dataset="recipes.recipes" active-filter-id="" />
-    <filter-actions connection-id="47675bae-8ec6-42dc-8d86-db1430607228" dataset="recipes.freefrom" active-filter-id="">
+    <filter-actions connection-id="47675bae-8ec6-42dc-8d86-db1430607228" dataset="recipes.freefrom" active-filter-id="EMPTY_FILTER">
       <filter id="d8b74d2d-4aa1-4219-b9a9-e6450b210906" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
         <condition column="freefrom_id" operator="=" value="" active="true" />
       </filter>
