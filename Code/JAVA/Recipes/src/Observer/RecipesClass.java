@@ -48,14 +48,14 @@ public class RecipesClass {
         }
     }
 
-    private Text description;
-    public Text getDescription()
+    private String description;
+    public String getDescription()
     {
         return description;
     }
-    public void setRecipeName(Text t)
+    public void setDescription(String s)
     {
-        if (t.getLength() < 3)
+        if (s.length() < 3)
         {
             JOptionPane.showMessageDialog(null,
                     "The length of the description must be at least 3 characters long!",
@@ -64,11 +64,11 @@ public class RecipesClass {
         }
         else
         {
-            this.description = t;
+            this.description = s;
         }
     }
 
-    public RecipesClass(String recipeName, String freefromName, Text description)
+    public RecipesClass(String recipeName, String freefromName, String description)
     {
         if (recipeName.length() < 3)
         {
@@ -94,7 +94,7 @@ public class RecipesClass {
             this.freefromName = freefromName;
         }
 
-        if (description.getLength() < 3)
+        if (description.length() < 3)
         {
             JOptionPane.showMessageDialog(null,
                     "The length of the description must be at least 3 characters long!",
