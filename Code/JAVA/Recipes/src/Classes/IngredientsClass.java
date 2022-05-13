@@ -5,7 +5,7 @@ import Exceptions.IngredientsNameTooShortException;
 
 import javax.swing.*;
 
-public class IngredienstClass {
+public class IngredientsClass {
     private static long ingredientsId = 0;
     private String ingredientsName;
     private int amount;
@@ -56,7 +56,7 @@ public class IngredienstClass {
         }
     }
 
-    public IngredienstClass(String ingredientsName, int amount){
+    public IngredientsClass(String ingredientsName, int amount){
         createId();
         if (ingredientsName.length() < 3)
         {
