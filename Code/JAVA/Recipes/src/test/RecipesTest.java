@@ -29,7 +29,8 @@ public class RecipesTest
     @Test
     public void getDescription()
     {
-
+        RecipesClass testDescription = new RecipesClass("testDesc", "testFreefromName", "This is a test description.");
+        Assert.assertEquals("This is a test description.", testDescription.getDescription());
     }
 
     @Test
