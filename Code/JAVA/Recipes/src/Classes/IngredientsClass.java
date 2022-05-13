@@ -1,9 +1,13 @@
 package Classes;
 
+import Exceptions.IngredientsAmountCannotBeEmpty;
 import Exceptions.IngredientsAmountTooShortException;
+import Exceptions.IngredientsNameCannotBeEmptyException;
 import Exceptions.IngredientsNameTooShortException;
 
 import javax.swing.*;
+
+import static java.util.Objects.isNull;
 
 public class IngredientsClass {
     private static long ingredientsId = 0;
@@ -34,6 +38,13 @@ public class IngredientsClass {
                     JOptionPane.WARNING_MESSAGE);
             throw new IngredientsNameTooShortException();
         }
+        if (isNull(ingredientsName)){
+            JOptionPane.showMessageDialog(null,
+                    "Ingredient name cannot be null.",
+                    "Warning!",
+                    JOptionPane.WARNING_MESSAGE);
+            throw new IngredientsNameCannotBeEmptyException();
+        }
         else
         {
             this.ingredientsName = ingredientsName;
@@ -50,6 +61,15 @@ public class IngredientsClass {
                     JOptionPane.WARNING_MESSAGE);
             throw new IngredientsAmountTooShortException();
         }
+        if (isNull(amount))
+        {
+            JOptionPane.showMessageDialog(null,
+                    "The amount of the ingredient cannot be null",
+                    "Warning!",
+                    JOptionPane.WARNING_MESSAGE);
+            throw new IngredientsAmountCannotBeEmpty();
+        }
+
         else
         {
             this.amount = amount;
@@ -76,6 +96,14 @@ public class IngredientsClass {
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
             throw new IngredientsAmountTooShortException();
+        }
+        if (isNull(amount))
+        {
+            JOptionPane.showMessageDialog(null,
+                    "The amount of the ingredient cannot be null",
+                    "Warning!",
+                    JOptionPane.WARNING_MESSAGE);
+            throw new IngredientsAmountCannotBeEmpty();
         }
         else
         {

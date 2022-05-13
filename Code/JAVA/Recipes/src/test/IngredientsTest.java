@@ -36,7 +36,9 @@ public class IngredientsTest {
 
     @Test
     public void IngredientsAmountCannotBeEmpty(){
-
+        Exception exception = Assert.assertThrows(IngredientsAmountTooShortException.class, () ->{
+            IngredientsClass testAmount = new IngredientsClass("Tej", 0);   //Null-t kell
+        });
     }
 
     @Test
@@ -53,7 +55,9 @@ public class IngredientsTest {
 
     @Test
     public void IngredientsNameCannotBeEmptyException(){
-
+        Exception exception = Assert.assertThrows(IngredientsNameTooShortException.class, () ->{
+            IngredientsClass testIngredientsName = new IngredientsClass("", 3);
+        });
     }
 
     @Test
