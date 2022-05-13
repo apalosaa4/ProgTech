@@ -1,6 +1,6 @@
-package test;
+package Test;
 
-import Observer.IngredienstClass;
+import Classes.IngredienstClass;
 import org.junit.Assert;
 import org.junit.Test;
 

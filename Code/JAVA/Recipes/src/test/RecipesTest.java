@@ -1,13 +1,10 @@
-package test;
+package Test;
 
 import Exceptions.RecipesNameCannotBeEmptyException;
 import Exceptions.RecipesNameTooShortException;
-import Exceptions.RecipesDescriptionCannotBeEmptyException;
-import Exceptions.RecipesDescriptionTooShortException;
-import Observer.RecipesClass;
+import Classes.RecipesClass;
 import org.junit.Test;
 import org.junit.Assert;
-import recipes_gui.Recipes;
 
 public class RecipesTest
 {

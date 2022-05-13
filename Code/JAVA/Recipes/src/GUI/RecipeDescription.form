@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.RecipeDescription">
+  <grid id="27dc6" binding="recipeDirections_panel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="30" left="30" bottom="30" right="30"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties>
+      <background color="-13149860"/>
+      <foreground color="-13149860"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="ac4b8" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13149860"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3a5ba" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-3735570"/>
+              <font name="Bookman Old Style" size="22" style="0"/>
+              <foreground color="-3735570"/>
+              <text value="Recipe Directions"/>
+            </properties>
+          </component>
+          <hspacer id="3a7dd">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </hspacer>
+        </children>
+      </grid>
+      <vspacer id="a5db2">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <grid id="b5d4e" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13149860"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="7cc24" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13149860"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="927e" class="javax.swing.JTextField" binding="Recipe_name">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13149860"/>
+                  <font name="Bookman Old Style" size="14" style="0"/>
+                  <foreground color="-3735570"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <vspacer id="f71d0">
+            <constraints>
+              <grid row="1" column="0" row-span="3" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <grid id="6f8aa" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13149860"/>
+              <foreground color="-13149860"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d241" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Bookman Old Style" size="14" style="0"/>
+                  <foreground color="-3735570"/>
+                  <text value="Gluten free"/>
+                </properties>
+              </component>
+              <component id="874e5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Bookman Old Style" size="14" style="0"/>
+                  <foreground color="-3735570"/>
+                  <text value="Milk free"/>
+                </properties>
+              </component>
+              <component id="e4c8f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Bookman Old Style" size="14" style="0"/>
+                  <foreground color="-3735570"/>
+                  <text value="Vegan"/>
+                </properties>
+              </component>
+              <component id="38dec" class="javax.swing.JCheckBox" binding="GlutenFreeCheck">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13149860"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="9c78a" class="javax.swing.JCheckBox" binding="MilkFreeCheck">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13149860"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="f52e5" class="javax.swing.JCheckBox" binding="VeganCheck">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13149860"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="787b9" class="javax.swing.JList" binding="ingredientsList">
+                <constraints>
+                  <grid row="0" column="0" row-span="6" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13610925"/>
+                  <dropMode value="USE_SELECTION"/>
+                  <font name="Bookman Old Style" size="12" style="0"/>
+                  <foreground color="-13610925"/>
+                  <model/>
+                  <selectionBackground color="-3735570"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="33735" class="javax.swing.JTextArea" binding="directionsTa">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-13610925"/>
+              <font name="Bookman Old Style" size="12" style="0"/>
+              <foreground color="-13610925"/>
+            </properties>
+          </component>
+          <component id="6dea2" class="javax.swing.JButton" binding="homePage_btn">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Bookman Old Style" size="14" style="0"/>
+              <foreground color="-16169912"/>
+              <text value="Home page"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
