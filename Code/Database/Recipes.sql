@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Máj 10. 17:58
+-- Létrehozás ideje: 2022. Máj 13. 22:38
 -- Kiszolgáló verziója: 10.4.11-MariaDB
 -- PHP verzió: 7.4.3
 
@@ -40,7 +40,7 @@ CREATE TABLE `freefrom` (
 --
 
 CREATE TABLE `ingredients` (
-  `ingredients_id` char(255) NOT NULL,
+  `ingredients_id` int(11) NOT NULL,
   `ingredients_name` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -76,7 +76,7 @@ CREATE TABLE `recipe_freefrom` (
 
 CREATE TABLE `recipe_ingredients` (
   `recipe_id` int(11) DEFAULT NULL,
-  `ingredients_id` char(255) DEFAULT NULL,
+  `ingredients_id` int(11) DEFAULT NULL,
   `ingredients_amount` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -114,8 +114,8 @@ ALTER TABLE `recipe_freefrom`
 -- A tábla indexei `recipe_ingredients`
 --
 ALTER TABLE `recipe_ingredients`
-  ADD KEY `ingredients_id` (`ingredients_id`),
-  ADD KEY `recipe_id` (`recipe_id`);
+  ADD KEY `recipe_id` (`recipe_id`),
+  ADD KEY `Constrait_Ingredients_FK` (`ingredients_id`);
 
 --
 -- Megkötések a kiírt táblákhoz
@@ -131,7 +131,7 @@ ALTER TABLE `freefrom`
 -- Megkötések a táblához `ingredients`
 --
 ALTER TABLE `ingredients`
-  ADD CONSTRAINT `Constrait_Recipe_Ingredients_FK` FOREIGN KEY (`ingredients_id`) REFERENCES `recipe_ingredients` (`ingredients_id`);
+  ADD CONSTRAINT `Constrait_RecipeIngredients_FK` FOREIGN KEY (`ingredients_id`) REFERENCES `recipe_ingredients` (`ingredients_id`);
 
 --
 -- Megkötések a táblához `recipe_freefrom`
@@ -144,7 +144,7 @@ ALTER TABLE `recipe_freefrom`
 -- Megkötések a táblához `recipe_ingredients`
 --
 ALTER TABLE `recipe_ingredients`
-  ADD CONSTRAINT `recipe_ingredients_ibfk_1` FOREIGN KEY (`ingredients_id`) REFERENCES `ingredients` (`ingredients_id`),
+  ADD CONSTRAINT `Constrait_Ingredients_FK` FOREIGN KEY (`ingredients_id`) REFERENCES `ingredients` (`ingredients_id`),
   ADD CONSTRAINT `recipe_ingredients_ibfk_2` FOREIGN KEY (`recipe_id`) REFERENCES `recipes` (`recipes_id`);
 COMMIT;
 
