@@ -3,10 +3,14 @@ package Observer;
 import javax.swing.*;
 
 public class IngredienstClass {
-    private char ingredientsId;
-    public char getIngredientsId()
+    private static long ingredientsId = 0;
+    public long getIngredientsId()
     {
         return ingredientsId;
+    }
+    public static synchronized String createId()
+    {
+        return String.valueOf(ingredientsId++);
     }
     private String ingredientsName;
     public String getingredientsName()
@@ -26,5 +30,10 @@ public class IngredienstClass {
         {
             this.ingredientsName = s;
         }
+    }
+
+    public IngredienstClass(String ingredientsName){
+        createId();
+        setIngredientsName(ingredientsName);
     }
 }
