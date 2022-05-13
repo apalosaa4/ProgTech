@@ -49,12 +49,16 @@ public class RecipesTest
     @Test
     public void RecipesDescriptionCannotBeEmptyException()
     {
-
+        Exception exception = Assert.assertThrows(RecipesNameTooShortException.class, () ->{
+            RecipesClass testRecipes = new RecipesClass("testRecipeName", "testFreeFromName", "");
+        });
     }
 
     @Test
     public void RecipesDescriptionTooShortException()
     {
-
+        Exception exception = Assert.assertThrows(RecipesNameTooShortException.class, () ->{
+            RecipesClass testRecipes = new RecipesClass("testRecipeName", "testFreeFromName", "testTe");
+        });
     }
 }
