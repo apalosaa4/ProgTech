@@ -4,6 +4,9 @@ import javax.swing.*;
 
 public class IngredienstClass {
     private static long ingredientsId = 0;
+    private String ingredientsName;
+    private int amount;
+
     public long getIngredientsId()
     {
         return ingredientsId;
@@ -13,13 +16,14 @@ public class IngredienstClass {
     {
         return String.valueOf(ingredientsId++);
     }
-    private String ingredientsName;
+
     public String getingredientsName()
     {
         return ingredientsName;
     }
-    public void setIngredientsName(String s) {
-        if (s.length() < 3)
+
+    public void setIngredientsName(String ingredientsName) {
+        if (ingredientsName.length() < 3)
         {
             JOptionPane.showMessageDialog(null,
                     "The length of the ingredients name must be at least 3 characters long!",
@@ -28,26 +32,47 @@ public class IngredienstClass {
         }
         else
         {
-            this.ingredientsName = s;
+            this.ingredientsName = ingredientsName;
         }
     }
-    private int amount;
+
     public int getAmount(){ return amount; }
     public void setAmount(int amount){
-        if (amount < 0){
+        if (amount < 0)
+        {
             JOptionPane.showMessageDialog(null,
                     "The amount of the ingredient should not be zero or less.",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
         }
-        else {
+        else
+        {
             this.amount = amount;
         }
     }
 
     public IngredienstClass(String ingredientsName, int amount){
         createId();
-        setIngredientsName(ingredientsName);
-        setAmount(amount);
+        if (ingredientsName.length() < 3)
+        {
+            JOptionPane.showMessageDialog(null,
+                    "The length of the ingredients name must be at least 3 characters long!",
+                    "Warning!",
+                    JOptionPane.WARNING_MESSAGE);
+        }
+        else
+        {
+            this.ingredientsName = ingredientsName;
+        }
+        if (amount < 0){
+            JOptionPane.showMessageDialog(null,
+                    "The amount of the ingredient should not be zero or less.",
+                    "Warning!",
+                    JOptionPane.WARNING_MESSAGE);
+        }
+        else
+        {
+            this.amount = amount;
+        }
     }
 }

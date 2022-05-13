@@ -1,4 +1,4 @@
-package test;
+package Test;
 
 import Classes.IngredienstClass;
 import org.junit.Assert;
@@ -30,6 +30,31 @@ public class IngredientsTest {
     public void getNegativeAmount(){
         IngredienstClass testAmount = new IngredienstClass("Alma", 10);
         Assert.assertNotEquals(9, testAmount.getAmount());
+    }
+
+    @Test
+    public void IngredientsAmountCannotBeEmpty(){
+
+    }
+
+    @Test
+    public void IngredientsAmountTooShortException(){
+
+    }
+
+    @Test
+    public void IngredientsIDCannotBeEmptyException(){
+
+    }
+
+    @Test
+    public void IngredientsNameCannotBeEmptyException(){
+
+    }
+
+    @Test
+    public void IngredientsNameTooShortException(){
+
     }
 
 }
