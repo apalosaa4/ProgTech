@@ -3,12 +3,12 @@ package Observer;
 import javax.swing.*;
 
 public class IngredienstClass {
-    char ingredientsId;
+    private char ingredientsId;
     public char getIngredientsId()
     {
         return ingredientsId;
     }
-    String ingredientsName;
+    private String ingredientsName;
     public String getingredientsName()
     {
         return ingredientsName;

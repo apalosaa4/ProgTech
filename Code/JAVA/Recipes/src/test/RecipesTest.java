@@ -22,8 +22,8 @@ public class RecipesTest
     @Test
     public void getFreefromName()
     {
-        RecipesClass testRecipe = new RecipesClass("testRecipeName", "testFreeFromName", "testText");
-        Assert.assertEquals("testRecipeName", testRecipe.getRecipeName());
+        RecipesClass testFreefromName = new RecipesClass("testFreefromName", "testFreefromName", "testText");
+        Assert.assertEquals("testFreefromName", testFreefromName.getFreefromName());
     }
 
     @Test
