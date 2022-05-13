@@ -8,6 +8,7 @@ public class IngredienstClass {
     {
         return ingredientsId;
     }
+
     public static synchronized String createId()
     {
         return String.valueOf(ingredientsId++);
@@ -31,13 +32,16 @@ public class IngredienstClass {
         }
     }
     private int amount;
-    public int getAmount(){return amount;}
-    public void setAmount(int a){
-        if (a > 0){
+    public int getAmount(){ return amount; }
+    public void setAmount(int amount){
+        if (amount < 0){
             JOptionPane.showMessageDialog(null,
                     "The amount of the ingredient should not be zero or less.",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
+        }
+        else {
+            this.amount = amount;
         }
     }
 
