@@ -17,8 +17,7 @@ public class IngredienstClass {
     {
         return ingredientsName;
     }
-    public void setIngredientsName(String s)
-    {
+    public void setIngredientsName(String s) {
         if (s.length() < 3)
         {
             JOptionPane.showMessageDialog(null,
@@ -31,9 +30,20 @@ public class IngredienstClass {
             this.ingredientsName = s;
         }
     }
+    private int amount;
+    public int getAmount(){return amount;}
+    public void setAmount(int a){
+        if (a > 0){
+            JOptionPane.showMessageDialog(null,
+                    "The amount of the ingredient should not be zero or less.",
+                    "Warning!",
+                    JOptionPane.WARNING_MESSAGE);
+        }
+    }
 
-    public IngredienstClass(String ingredientsName){
+    public IngredienstClass(String ingredientsName, int amount){
         createId();
         setIngredientsName(ingredientsName);
+        setAmount(amount);
     }
 }

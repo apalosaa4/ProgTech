@@ -7,17 +7,17 @@ import org.junit.Test;
 public class IngredientsTest {
 
     @Test
-    public void getIngredientsName()
+    public void getIngredientsNameSameIngredient()
     {
-        IngredienstClass testIngredients = new IngredienstClass("testIngredientsName");
-        Assert.assertEquals("testIngredientsName", testIngredients.getingredientsName());
+        IngredienstClass testIngredients = new IngredienstClass("testIngredientName", 1);
+        Assert.assertEquals("testIngredientName", testIngredients.getingredientsName());
     }
 
     @Test
-    public void getIngredientsName1()
+    public void getIngredientsNameOtherIngredient()
     {
-        IngredienstClass testIngredients = new IngredienstClass("testIngredientsName");
-        Assert.assertNotEquals("otherIngredientsName", testIngredients.getingredientsName());
+        IngredienstClass testIngredients = new IngredienstClass("testIngredientName", 1);
+        Assert.assertNotEquals("otherIngredietsName", testIngredients.getingredientsName());
     }
 
 }
