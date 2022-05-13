@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import Classes.IngredienstClass;
 import org.junit.Assert;

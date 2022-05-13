@@ -1,4 +1,4 @@
-package Test;
+package test;
 
 import Exceptions.RecipesNameCannotBeEmptyException;
 import Exceptions.RecipesNameTooShortException;
