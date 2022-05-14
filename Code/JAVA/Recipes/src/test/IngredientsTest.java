@@ -29,28 +29,10 @@ public class IngredientsTest {
     }
 
     @Test
-    public void getNegativeAmount(){
-        IngredientsClass testAmount = new IngredientsClass("Alma", 10);
-        Assert.assertNotEquals(9, testAmount.getAmount());
-    }
-
-    @Test
-    public void IngredientsAmountCannotBeEmpty(){
-        Exception exception = Assert.assertThrows(IngredientsAmountTooShortException.class, () ->{
-            IngredientsClass testAmount = new IngredientsClass("Tej", 0);   //Null-t kell
-        });
-    }
-
-    @Test
     public void IngredientsAmountTooShortException(){
         Exception exception = Assert.assertThrows(IngredientsAmountTooShortException.class, () ->{
             IngredientsClass testAmount = new IngredientsClass("Tej", -1);
         });
-    }
-
-    @Test
-    public void IngredientsIDCannotBeEmptyException(){
-
     }
 
     @Test

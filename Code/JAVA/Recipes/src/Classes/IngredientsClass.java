@@ -45,15 +45,12 @@ public class IngredientsClass {
                     JOptionPane.WARNING_MESSAGE);
             throw new IngredientsNameCannotBeEmptyException();
         }
-        else
-        {
             this.ingredientsName = ingredientsName;
-        }
     }
 
     public int getAmount(){ return amount; }
     public void setAmount(int amount){
-        if (amount < 0)
+        if (amount <= 0)
         {
             JOptionPane.showMessageDialog(null,
                     "The amount of the ingredient should not be zero or less.",
@@ -61,53 +58,12 @@ public class IngredientsClass {
                     JOptionPane.WARNING_MESSAGE);
             throw new IngredientsAmountTooShortException();
         }
-        if (isNull(amount))
-        {
-            JOptionPane.showMessageDialog(null,
-                    "The amount of the ingredient cannot be null",
-                    "Warning!",
-                    JOptionPane.WARNING_MESSAGE);
-            throw new IngredientsAmountCannotBeEmpty();
-        }
-
-        else
-        {
             this.amount = amount;
-        }
     }
 
     public IngredientsClass(String ingredientsName, int amount){
         createId();
-        if (ingredientsName.length() < 3)
-        {
-            JOptionPane.showMessageDialog(null,
-                    "The length of the ingredients name must be at least 3 characters long!",
-                    "Warning!",
-                    JOptionPane.WARNING_MESSAGE);
-            throw new IngredientsNameTooShortException();
-        }
-        else
-        {
-            this.ingredientsName = ingredientsName;
-        }
-        if (amount < 0){
-            JOptionPane.showMessageDialog(null,
-                    "The amount of the ingredient should not be zero or less.",
-                    "Warning!",
-                    JOptionPane.WARNING_MESSAGE);
-            throw new IngredientsAmountTooShortException();
-        }
-        if (isNull(amount))
-        {
-            JOptionPane.showMessageDialog(null,
-                    "The amount of the ingredient cannot be null",
-                    "Warning!",
-                    JOptionPane.WARNING_MESSAGE);
-            throw new IngredientsAmountCannotBeEmpty();
-        }
-        else
-        {
-            this.amount = amount;
-        }
+        setIngredientsName(ingredientsName);
+        setAmount(amount);
     }
 }
