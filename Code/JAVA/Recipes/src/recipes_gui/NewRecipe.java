@@ -16,12 +16,13 @@ public class NewRecipe extends JFrame{
     private JLabel veganLbl;
     private JLabel milfFreeLbl;
     private JLabel ingredientsLbl;
-    private JList ingredientsList;
     private JLabel directionsLbl;
     private JTextArea directionsTa;
     private JButton upload_btn;
     private JButton homepage_btn;
     private JPanel newRecipe_panel;
+    private JTextField ingredientsNameTf;
+    private JButton plusIngredientBtn;
 
     public NewRecipe(){
         setContentPane(newRecipe_panel);
@@ -36,6 +37,21 @@ public class NewRecipe extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 WelcomePage welcomePage = new WelcomePage();
                 dispose();
+            }
+        });
+
+        upload_btn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //...
+            }
+        });
+
+        plusIngredientBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JTextField plusIngredientTf = new JTextField();
+                //...
             }
         });
     }
