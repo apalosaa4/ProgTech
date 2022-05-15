@@ -7,6 +7,8 @@ import Exceptions.IngredientsNameTooShortException;
 
 import javax.swing.*;
 
+import java.util.ArrayList;
+
 import static java.util.Objects.isNull;
 
 public class IngredientsClass {
@@ -65,5 +67,36 @@ public class IngredientsClass {
         createId();
         setIngredientsName(ingredientsName);
         setAmount(amount);
+    }
+
+    private ArrayList<IngredientsClass> ingredients = new ArrayList<IngredientsClass>();
+
+    public void AddRecipes(IngredientsClass e)
+    {
+        if (!e.equals(null))
+        {
+            ingredients.add(e);
+        }
+    }
+
+    public void ListRecipes()
+    {
+        for(int i = 0; i < ingredients.size(); i++)
+        {
+            System.out.println(ingredients.get(i).getIngredientsId() + " "
+                    + ingredients.get(i).getingredientsName() + " "
+                    + ingredients.get(i).getAmount());
+        }
+    }
+
+    public void DeleteByName(String name)
+    {
+        for(int i = 0; i < ingredients.size(); i++)
+        {
+            if(ingredients.get(i).getingredientsName() == name)
+            {
+                ingredients.remove(i);
+            }
+        }
     }
 }
