@@ -126,4 +126,23 @@ public class DatabaseConnection
             logger.warn("Record was NOT updated successfully!");
         }
     }
+
+    protected void UpdateIngredients(int id, String ingredietsName) throws Exception {
+        PreparedStatement query = null;
+        Connection connection = this.Connect();
+        try
+        {
+            String sqlQuery = "UPDATE `recipes` SET `recipes_name`='" + ingredietsName + "',"+
+                    "WHERE `id` = " + id;
+            logger.info(sqlQuery);
+            query = connection.prepareStatement(sqlQuery);
+            query.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Record was updated successfully!");
+            logger.info("Record was updated successfully");
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+            logger.warn("Record was NOT updated successfully!");
+        }
+    }
 }
