@@ -4,7 +4,7 @@
 *	Instructor: Troll Ede
 *	Time: Hétfő 10:00-11:40
 *	Project description: JAVA nyelven írt ablakos alkalmazás
-*	Trello: (Link)[https://trello.com/b/Uw5KlS6Z/progtech]
+*	Trello: https://trello.com/b/Uw5KlS6Z/progtech
 *	Members:
 	* <a href="https://github.com/apalosaa4">Bognár Viktória</a>
 	* <a href="https://github.com/KulcsarVivi">Kulcsár Vivien</a>
