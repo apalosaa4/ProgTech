@@ -11,11 +11,23 @@ import java.sql.*;
 public class DatabaseConnection
 {
     private static Logger logger = Logger.getLogger(DatabaseConnection.class);
-    protected String databaseName;
-    public DatabaseConnection(String databaseName){
+    private String databaseName;
+    private static DatabaseConnection uniqueInstance = null;
+    private DatabaseConnection(String databaseName){
         this.databaseName = databaseName;
     }
 
+    public String getDatabaseName() {
+        return databaseName;
+    }
+
+    public static DatabaseConnection GetInstance(){
+        if (uniqueInstance == null)
+        {
+            uniqueInstance = new DatabaseConnection(GetInstance().getDatabaseName());
+        }
+        return uniqueInstance;
+    }
     /**
      * function to connect to the database
      * @return the connection to be used in the statements
