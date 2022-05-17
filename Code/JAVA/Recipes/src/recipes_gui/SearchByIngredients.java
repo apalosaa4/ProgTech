@@ -7,18 +7,14 @@ import java.awt.event.ActionListener;
 public class SearchByIngredients extends JFrame{
 
     private JPanel searchByIngredients_panel;
-    private JTextField ingredient_1;
-    private JTextField ingredient_2;
-    private JTextField ingredient_3;
-    private JTextField ingredient_4;
-    private JTextField ingredient_5;
-    private JTextField ingredient_6;
-    private JTextField ingredient_7;
+    private JTextField ingredientTf;
     private JButton search_btn;
     private JCheckBox MilkFreeCheck;
     private JCheckBox GlutenFreeCheck;
     private JCheckBox VeganCheck;
     private JButton homePage_btn;
+    private JButton ingredientAddBtn;
+    private JScrollPane ingredientsScrollPane;
 
     public SearchByIngredients(){
         setContentPane(searchByIngredients_panel);
