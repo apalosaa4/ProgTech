@@ -5,7 +5,7 @@ CREATE TABLE `freefrom` (
 
 CREATE TABLE `measurement` (
   `measurement_id` int(11) PRIMARY KEY NOT NULL,
-  `ingredients_amount` int(11) DEFAULT NULL,
+  `measurement_amount` int(11) DEFAULT NULL,
   `measurement_name` varchar(255) DEFAULT NULL
 );
 
@@ -24,7 +24,7 @@ CREATE TABLE `recipe_freefrom` (
 CREATE TABLE `recipe_measurement` (
   `recipe_id` int(11) DEFAULT NULL,
   `measurement_id` int(11) DEFAULT NULL,
-  `ingredients_id` int(11) DEFAULT NULL
+  `ingredients_name` varchar(255) DEFAULT NULL
 );
 
 ALTER TABLE `freefrom` ADD FOREIGN KEY (`freefrom_id`) REFERENCES `recipe_freefrom` (`freefrom_id`);
