@@ -15,7 +15,6 @@ public class NewRecipe extends JFrame{
     private JLabel glutenFreeLbl;
     private JLabel veganLbl;
     private JLabel milfFreeLbl;
-    private JLabel ingredientsLbl;
     private JLabel directionsLbl;
     private JTextArea directionsTa;
     private JButton upload_btn;
@@ -23,6 +22,8 @@ public class NewRecipe extends JFrame{
     private JPanel newRecipe_panel;
     private JTextField ingredientsNameTf;
     private JButton plusIngredientBtn;
+    private JScrollPane ingredientsScrollPane;
+    private JComboBox measurementComboBox;
 
     public NewRecipe(){
         setContentPane(newRecipe_panel);
