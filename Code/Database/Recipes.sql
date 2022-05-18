@@ -5,7 +5,7 @@ CREATE TABLE `freefrom` (
 
 CREATE TABLE `measurement` (
   `measurement_id` int(11) PRIMARY KEY NOT NULL,
-  `measurement_amount` int(11) DEFAULT NULL,
+  `measurement_amount` double(11) DEFAULT NULL,
   `measurement_name` varchar(255) DEFAULT NULL
 );
 
