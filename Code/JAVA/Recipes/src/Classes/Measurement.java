@@ -39,13 +39,6 @@ public class Measurement {
                     JOptionPane.WARNING_MESSAGE);
             throw new MeasurementNameTooShortException();
         }
-        if (isNull(measurementName)){
-            JOptionPane.showMessageDialog(null,
-                    "Measurement name cannot be null.",
-                    "Warning!",
-                    JOptionPane.WARNING_MESSAGE);
-            throw new MeasurementNameCannotBeEmptyException();
-        }
         this.measurementName = measurementName;
     }
 
@@ -54,7 +47,7 @@ public class Measurement {
     }
 
     public void setMeasurementAmount(double measurementAmount) {
-        if (measurementAmount <= 0)
+        if (measurementAmount < 0)
         {
             JOptionPane.showMessageDialog(null,
                     "The amount of measurement must not be less than zero.",
