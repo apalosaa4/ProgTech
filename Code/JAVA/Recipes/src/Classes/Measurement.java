@@ -21,7 +21,7 @@ public class Measurement {
                     "The ID cannot be zero.",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
-            //throw new MeasurementIDCannotBeEmptyException();
+            throw new MeasurementIDCannotBeEmptyException();
         }
         Measurement.measurementId = measurementId;
     }
@@ -37,14 +37,14 @@ public class Measurement {
                     "The length of the measurement name must be at least 3 characters long!",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
-            //throw new MeasurementNameTooShortException();
+            throw new MeasurementNameTooShortException();
         }
         if (isNull(measurementName)){
             JOptionPane.showMessageDialog(null,
                     "Measurement name cannot be null.",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
-            //throw new MeasurementNameCannotBeEmptyException();
+            throw new MeasurementNameCannotBeEmptyException();
         }
         this.measurementName = measurementName;
     }
@@ -60,14 +60,14 @@ public class Measurement {
                     "The amount of measurement must not be less than zero.",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
-            //throw new MeasurementAmountTooShortException();
+            throw new MeasurementAmountTooShortException();
         }
         if (measurementAmount == 0){
             JOptionPane.showMessageDialog(null,
                     "The amount of measurement cannot be zero.",
                     "Warning!",
                     JOptionPane.WARNING_MESSAGE);
-            //throw new MeasurementAmountCannotBeEmpty();
+            throw new MeasurementAmountCannotBeEmptyException();
         }
         this.measurementAmount = measurementAmount;
     }
