@@ -144,7 +144,27 @@ public class DatabaseConnection
         Connection connection = this.Connect();
         try
         {
-            String sqlQuery = "UPDATE `recipes` SET `recipes_name`='" + ingredietsName + "',"+
+            String sqlQuery = "UPDATE `recipes` SET `ingrediets_name`='" + ingredietsName + "',"+
+                    "WHERE `id` = " + id;
+            logger.info(sqlQuery);
+            query = connection.prepareStatement(sqlQuery);
+            query.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Record was updated successfully!");
+            logger.info("Record was updated successfully");
+        }
+        catch (SQLException exception) {
+            exception.printStackTrace();
+            logger.warn("Record was NOT updated successfully!");
+        }
+    }
+
+    protected void UpdateMeasurement(int id, double measurementAmount, String measurementName) throws Exception {
+        PreparedStatement query = null;
+        Connection connection = this.Connect();
+        try
+        {
+            String sqlQuery = "UPDATE `measurement` SET `measurement_name`='" + measurementName + "',"+
+                    "`measurement_amount`='" + measurementAmount + "'," +
                     "WHERE `id` = " + id;
             logger.info(sqlQuery);
             query = connection.prepareStatement(sqlQuery);
